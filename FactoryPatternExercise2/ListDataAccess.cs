@@ -9,13 +9,13 @@ namespace FactoryPatternExercise2
 
 		public List<Product> LoadData()
 		{
-			Console.WriteLine($"I am reading data from {GetType()}");
+			Console.WriteLine($"I am reading data from {GetType().Name}");
 			return new List<Product>();
 		}
 
 		public void SaveData()
 		{
-			Console.WriteLine($"I am saving data to {GetType()}");
+			Console.WriteLine($"I am saving data to {GetType().Name}");
 		}
 	}
 }
